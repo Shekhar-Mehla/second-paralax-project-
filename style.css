@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 /* <!-- Herosection --> */
 .wrapper {
@@ -26,7 +26,7 @@ video {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  animation: 3s linear 0s infinite normal none running change_color;
+  animation: change_color 3s linear 0s infinite normal none running;
   border-radius: 10px;
   font-size: 25px;
 }
@@ -162,20 +162,20 @@ footer {
   width: 30vw;
 }
 /* media querry starts hereh  */
-@media (min-width: 951px) {
+@media (min-width: 950px) {
   .hero {
     top: 5vh;
     left: 5vw;
   }
   .downarrow {
-    bottom: 31rem;
+    bottom: 4em;
   }
   @keyframes iconcolor {
     0% {
-      bottom: 4vh;
+      bottom: 4em;
     }
     100% {
-      bottom: 3vh;
+      bottom: 4.5em;
       color: orangered;
     }
   }
@@ -239,10 +239,10 @@ footer {
 
 @media (549px >width > 300px) {
   .hero {
-    width: 259px;
-    height: 134px;
-    font-size: 14px;
-    top: 1vh;
+    width: 80vw;
+    height: 93px;
+    font-size: 10px;
+    top: 2vh;
     left: 2vw;
   }
   .downarrow {
@@ -251,33 +251,55 @@ footer {
   }
   @keyframes iconcolor {
     0% {
-      bottom: 32.5em;
+      bottom: 34.5em;
     }
     100% {
-      bottom: 33em;
+      bottom: 34em;
       color: orangered;
     }
   }
   .navbar {
-    padding: 0px 7px;
-    font-size: 14px;
+    padding: 6px 7px;
+    font-size: 11px;
   }
   .paragrap_list {
-    width: 89vw;
+    width: 81vw;
 
     font: weight 500px;
-    font-size: 17px;
+    font-size: 13px;
   }
   .footer_content {
     width: 90vw;
   }
-  @media (299px >width > 250px) {
-    .hero {
-      width: 92vw;
-      height: 92px;
-      font-size: 7px;
-      top: 1vh;
-      left: 7vw;
-    }
+}
+@media (299px >width > 250px) {
+  .hero {
+    width: 73vw;
+    height: 59px;
+    font-size: 7px;
+    top: 1vh;
+    left: 7vw;
+  }
+  .downarrow {
+    display: none;
+  }
+  .navbar {
+    padding: 3px 6px;
+    font-size: 8px;
+  }
+  .paragrap_list {
+    width: 83vw;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 11px;
+  }
+  [class^="image"] {
+    font-size: 21px;
+    letter-spacing: 7px;
+    animation: change_color 3s linear 0s infinite normal none running;
+  }
+  .footer_content {
+    font-size: 14px;
+    width: 69vw;
   }
 }
