@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  box-sizing: content-box;
 }
 /* <!-- Herosection --> */
 .wrapper {
@@ -167,14 +168,14 @@ footer {
     left: 5vw;
   }
   .downarrow {
-    bottom: 10em;
+    bottom: 31rem;
   }
   @keyframes iconcolor {
     0% {
-      bottom: 10em;
+      bottom: 4vh;
     }
     100% {
-      bottom: 10.5em;
+      bottom: 3vh;
       color: orangered;
     }
   }
@@ -269,5 +270,14 @@ footer {
   }
   .footer_content {
     width: 90vw;
+  }
+  @media (299px >width > 250px) {
+    .hero {
+      width: 92vw;
+      height: 92px;
+      font-size: 7px;
+      top: 1vh;
+      left: 7vw;
+    }
   }
 }
