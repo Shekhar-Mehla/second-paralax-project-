@@ -189,14 +189,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.31);
   }
   .downarrow {
-    bottom: 13em;
+    bottom: 6em;
   }
   @keyframes iconcolor {
     0% {
-      bottom: 13em;
+      bottom: 6em;
     }
     100% {
-      bottom: 11.5em;
+      bottom: 5.5em;
       color: orangered;
     }
   }
@@ -215,21 +215,27 @@ footer {
     background-color: rgba(0, 0, 0, 0.31);
   }
   .downarrow {
-    bottom: 13em;
+    bottom: 10em;
     font-size: 40px;
   }
   @keyframes iconcolor {
     0% {
-      bottom: 18em;
+      bottom: 10em;
     }
     100% {
-      bottom: 17.5em;
+      bottom: 9.5em;
       color: orangered;
     }
   }
   .navbar {
     padding: 0px 15px;
     font-size: 24px;
+  }
+  .paragrap_list {
+    width: 94vw;
+    text-align: justify;
+    font: weight 500px;
+    font-size: 11px;
   }
   .footer_content {
     width: 55vw;
@@ -246,15 +252,15 @@ footer {
     left: 2vw;
   }
   .downarrow {
-    bottom: 31.5em;
+    bottom: 23em;
     font-size: 25px;
   }
   @keyframes iconcolor {
     0% {
-      bottom: 34.5em;
+      bottom: 23em;
     }
     100% {
-      bottom: 34em;
+      bottom: 23.5em;
       color: orangered;
     }
   }
@@ -281,8 +287,19 @@ footer {
     left: 7vw;
   }
   .downarrow {
-    display: none;
+    font-size: 29px;
   }
+  @keyframes iconcolor {
+    0% {
+      color: white;
+      bottom: 19em;
+    }
+    100% {
+      bottom: 18.5em;
+      color: orangered;
+    }
+  }
+
   .navbar {
     padding: 3px 6px;
     font-size: 8px;
